@@ -23,6 +23,18 @@ stops.delete_at(cumbernauld_index)
 p stops.length()
 
 #8. Show as many ways as you can to return "Falkirk High" from the array?
+p stops[2]
+p stops[-5]
+p stops.select{ |x| x == "Falkirk High"}
+p stops.reject{ |x| x != "Falkirk High"}
+p stops.slice(2, 1)
+
+for stop in stops
+    if stop == "Falkirk High"
+        p stop
+    end
+end
+
 #9. Reverse the positions of the stops in the array
 #10 Print out all the stops using a for loop
 p stops
