@@ -70,6 +70,20 @@ p users["Avril"][:pets][0][:species]
 p users["Erik"][:lottery_numbers].min()
 
 # 6. Return an array of Avril's lottery numbers that are even
+def even_nums(array)
+  even_nums = Array.new()
+
+  for num in array
+    if (num.even?)
+      even_nums.push(num)
+    end 
+  end
+
+  return even_nums
+end
+
+p even_nums(users["Avril"][:lottery_numbers])
+
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 # 8. Change Erik's hometown to Edinburgh
 # 9. Add a pet dog to Erik called "Fluffy"
