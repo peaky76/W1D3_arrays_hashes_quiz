@@ -36,5 +36,7 @@ for stop in stops
 end
 
 #9. Reverse the positions of the stops in the array
+stops.reverse!()
+
 #10 Print out all the stops using a for loop
 p stops
