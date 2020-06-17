@@ -96,8 +96,15 @@ users["Erik"][:pets].push({
   :species => "dog"
 })
 
-p users["Erik"][:pets]
-
-
-
 # 10. Add another person to the users hash
+users["Dave"] = {
+  twitter: "daveyc",
+  hometown: "Coatbridge",
+  lottery_numbers: [1, 12, 16, 36, 45, 46],
+  pets: [
+    {
+      name: "snuggles",
+      species: "stick insect" 
+    }
+  ]
+}
